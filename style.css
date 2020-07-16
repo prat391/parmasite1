@@ -1,0 +1,733 @@
+/*------------------Font Import----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+html, body {
+    margin:0px 0px 0px 0px;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+/*----------------------------Top Bar----------------------------*/
+
+#topbarplaceholder {
+    display: flex;
+    height: 25px;
+    background: #1a6fba;
+
+}
+
+
+
+.headertopbar>h2 {
+    margin:0;
+    padding: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 16px
+}
+
+
+
+/* ------Header Styling --------------> */
+
+.headermiddlecontainer
+{
+    display:grid;
+    background-color:#fff;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50vw 30vw;
+    grid-template-columns: 0.5fr 0.4fr;
+    
+    
+}
+
+.headerleftcontainer {
+    display:flex;
+    align-items: center;
+    justify-self: center;
+
+}
+
+.headersearchcontainer {
+
+    justify-self: center;
+    
+    }
+
+#ParmaLogo {
+    width:100px
+}
+
+.parmatitlecontainer {
+    display:flex;
+    
+}
+
+.parmatitlecontainer>h1 {
+    color: #6b6b6b;
+    font-size: 3vw;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 100;
+    position: relative;
+
+}
+
+.Parmaheadertitlep2 {
+    color: #1a6fba!important;
+    font-weight: 600!important;
+    padding: 0 0px 0 10px
+}
+
+
+.searchbar>input {
+    border-radius: 20px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+.headernavigationcontainer {
+    display:flex;
+    justify-content: center;
+    background-color: #fff;
+    
+}
+
+.navbarmain.hasHover {
+    display:flex;
+    width:50vw;
+    list-style-type: none;
+    align-items: center;  
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    right: 3vw;
+    z-index: 9;
+    
+    
+    
+}
+
+
+
+.navbarmain>li>a {
+    text-decoration: none;
+
+}
+
+.topnavitem {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: 10px 5vw 10px 5vw;
+    /*margin: 10px 50px;*/
+    position: relative;
+
+    
+    font-size: 18px;
+    
+}
+
+.topnavtext {
+    color: #1a6fba;
+    transform:none;
+
+
+}
+
+
+
+
+
+
+
+.navbarmain.hasHover   :hover {
+
+    background-color: #d3f0fd;
+}
+
+
+
+
+
+.navbarmain.hasHover>li:hover .nav-level-one.hasHover {
+    visibility:visible;
+    display:block;
+    background-color: #fff;
+    margin: 0;
+    opacity:1 ;
+    
+    
+    
+}
+
+.nav-level-one.hasHover {
+    visibility:hidden;
+    
+    padding: 0px;
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 0 35px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    
+     
+    
+    
+   
+    
+    
+}
+
+.tmi {
+    font-size: 0.83vw!important;
+}
+
+
+.nav-level-one.hasHover>li {
+    padding: 18.3px 0px 18px 15px;
+    text-align: left;
+    border-width: 0 0 0px 0;
+    border-style: solid;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+   
+
+
+
+   
+}
+
+.nav-level-one.hasHover>li>a {
+    text-decoration: none;
+    color:gray;
+    
+    
+   
+}
+
+.nav-level-two.hasHover {
+    display:none;
+    list-style-type: none;
+
+}
+
+.nav-level-one>li:hover>.nav-level-two.hasHover {
+    display:grid;
+    position:absolute;
+    background-color:#fdfdfd;
+    left: 100%;
+    top: 0px;
+    grid-template-columns: 12vw 12vw 12vw 12vw;
+    grid-column-gap: 0px;
+    align-items: center;  
+    grid-row-gap: 0px;
+    padding: 10px 10px 4px 10px;
+    border-radius: 0 0 35px 0;
+    
+    
+
+}
+.nav-level-two.hasHover>li:hover>.pictext {
+
+    background-color:#f8f8f8;
+    cursor:pointer;
+}
+
+.nav-level-two.hasHover>li:hover>.pictext>img {
+
+    background-color:#f8f8f8;
+    transform: scale(1.03);
+    
+}
+
+.nav-level-two.hasHover>li:hover>.pictext>a {
+
+    background-color:#f8f8f8;
+
+}
+.pictext {
+
+    display: grid;
+    
+
+}
+
+.pictext>img {
+    width:131px;
+    place-self: center;
+}
+
+.pictext>a {
+
+    text-decoration: none;
+    color: #000;
+    padding: 18px 15px 18.5px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+.mobile-nav-toggle {
+    display:none;
+}
+
+
+.plus {
+    display: none;
+    position: relative;
+}
+
+.sub-plus {
+    display:none;
+
+}
+
+
+/*--------------------Footer Elements Styling------------------------*/
+
+.footertopsolid {
+    width: 100%;
+    background:#1a6fba;
+    height: 1px;
+    display:none;
+    
+  
+
+}
+
+.footercontent {
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:baseline;
+    
+}
+
+.footertitles {
+    font-family: 'Open Sans', sans-serif;
+    font-size:20px;
+    font-weight:400;
+    color: #1a6fba;
+
+}
+
+.footerblockone{
+    margin-left:5%;
+    margin-right:5%
+    
+}
+
+.footerblocktwo{
+    margin-left:5%;
+    margin-right:5%
+}
+
+.footerblockthree{
+    margin-left:5%;
+    margin-right:5%
+}
+
+.footermatter {
+    text-align:left;
+    padding-left:0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:19px;
+    font-weight:100;
+    color: #000;
+    line-height:1.7em;
+}
+
+
+.parmatextfooter {
+    color: #6b6b6b;
+    font-size: 30px;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 100;
+    
+
+}
+
+.parmatextfooter>span {
+    color: #1a6fba;
+    font-size: 32px;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 600;
+    
+
+}
+
+.footermatter>li>i {
+
+    color: #1a6fba;
+    padding-right: 20px;
+}
+
+.address-line-2 {
+    padding-left: 42px;
+}
+
+.footer-container{
+    background: #f8f8f8;
+ 
+}
+
+.footer-container>p {
+    
+    margin: 0;
+    font-family:  'Open Sans', sans-serif;
+    align-self:center;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+/*--------------------------------------------------------------------------Mobile Styling--------------------------------------------------------*/
+
+
+
+
+
+@media screen and (max-width: 1000px){
+
+    .headertopbar {
+        display: none;
+    
+        
+    }
+
+    .topnavtext.active::before {
+
+        content: 'I';
+        color: #f38f1e;
+        transition-property: all;
+        transition: 0.5s ease-in-out;
+        font-family: 'Arial Narrow Bold', sans-serif;
+        font-weight:900;
+    }
+
+    .topnavtext.active {
+        text-align:left;
+           
+       }
+
+    .sub-plus {
+        display: inline-block;
+        transform: translateX(10px);
+        transition-property: all;
+        transition: 0.2s ease-in-out;
+
+
+    }
+
+    .sub-plus.active {
+        transform: rotateZ(-90deg)translateY(10px);
+        color: blue;
+        
+    }
+
+
+
+    .plus {
+        display: inline-block;
+        position: relative;
+        left: 70%;
+        transition-property: all;
+        transition: 0.2s ease-in-out;
+    }
+
+
+    .plus.active {
+        transform: rotateZ(-90deg) translateY(-6px);
+        color: #b0282b;
+
+    }
+
+
+.headermiddlecontainer {
+
+    display:flex;
+    width:100vw;
+    position: absolute;
+    background-color: #1a6fba;
+    
+    
+    
+    z-index: 1;
+    
+    
+} 
+
+.headerleftcontainer {
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.parmatitlecontainer>h1 {
+    color: #fff!important;
+    font-size: 7vw;
+    margin: 0; 
+
+}
+
+#ParmaLogo {
+    display: none;
+}
+
+.headersearchcontainer {
+    display:none;
+}
+
+
+.headernavigationcontainer {
+    
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    background-color: #fff;
+    height: fit-content;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    padding-top: 30px;
+    
+}
+
+
+.mobile-nav-toggle {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    
+}
+
+.hamburger-line{
+    background-color: #fff;
+    width: 30px;
+    display: block;
+    height: 3px;
+    margin-bottom: 6px;
+    border-radius: 15px 15px;
+    transition-property: all;
+    transition: 0.5s ease-in-out;
+    transform-origin: left;
+    
+    
+}
+
+
+.hamburger-line.mid.active {
+
+    
+    transform: translateX(-30px);
+    opacity: 0;
+
+}
+
+
+.hamburger-line.top.active {
+    transform: rotateZ(45deg)translateY(-2px);
+}
+
+
+.hamburger-line.bottom.active {
+    
+    transform: rotateZ(-45deg) translateY(2px);
+    
+}
+
+
+
+
+.navbarmain {
+    display:block;
+    
+    width:100vw;
+    list-style-type: none;     
+    margin: 0;
+    position: relative;
+    top: 5%;
+    right: 0;
+    padding: 0;   
+    
+}
+
+.headernavigationcontainer {
+    display:none;
+}
+.headernavigationcontainer.active {
+    display:flex;
+}
+
+
+
+.navbarmain>li {
+    float:none;
+    
+    
+}
+
+.tmi {
+    font-size: 16px!important;
+}
+
+
+
+
+
+
+
+
+.nav-level-one {
+    display:none;
+    position:static;
+    padding: 0;
+    transition-property: all;
+    transition: 0.5s ease-in-out;
+    
+    
+    
+}
+
+.nav-level-two {
+    display:none;
+    position:static;
+    background-color:#fff;
+    left: 0;
+    top: 0; 
+    padding: 0px;
+    
+}
+
+.nav-level-two>li {
+    list-style: none;
+    
+    padding: 0px;
+    
+
+}
+
+
+    
+
+
+
+.nav-level-two>li:hover .pictext {
+    background-color: #fff;
+    padding: 0;
+}
+
+.nav-level-two>li:hover .pictext>a {
+    background-color: #fff;
+}
+
+
+.nav-level-one>li {
+    text-align: left;
+    padding-top: 5px;
+    list-style: none;
+    
+}
+
+
+
+
+.pictext>img {
+    display: none;
+}
+
+
+.pictext>a {
+    padding: 8px 0px 5px 0px;
+    text-align: left;
+
+}
+
+.nav-level-one>li>a {
+
+    text-decoration: none;
+    color: #6b6b6b;
+    font-size: 16px;
+    transition-property: all;
+    transition: 0.5s ease-in-out;
+
+}
+
+
+.productsnav.active::after{
+    content:'───────────────────────────';
+    color: #6b6b6b;
+
+}
+
+
+
+
+.productsnavtext.highlight {
+    color:#1a6fba;
+}
+
+.footerblockone{
+display:block;
+    
+}
+
+.footerblocktwo{
+display:block;
+
+}
+
+
+
+.footercontent {
+    display:block;
+}
+
+
+
+
+.footertitles{
+    font-size: 16px;
+    padding-top:10px;
+    
+}
+
+.footermatter {
+    font-size: 16px;
+}
+.parmatextfooter, .parmatextfooter>span {
+    padding-top: 10px;
+    font-size: 20px;
+    
+}
+
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------*/
+
